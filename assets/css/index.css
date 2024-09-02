@@ -5,6 +5,30 @@ como los celulares y vamos incrementando el tamaño hasta que llegue a
 los dispositivos mas grandes como las computadoras de escritorio
 */
 
+.header__container__text {
+    padding: 3rem 2rem 5.2rem 2rem;
+}
+
+.header__container__text h1 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0.8rem;
+}
+
+.header__container__text p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
 @media (min-width: 768px) {}
 @media (min-width: 1024px) {}
 @media (min-width: 1200px) {}
