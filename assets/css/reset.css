@@ -1,0 +1,51 @@
+/* reset.css */
+
+/* 
+IMPORTANTE
+Este archivo es para resetear los estilos de los elementos HTML
+PONER EN TODOS LOS HTML COMO PRIMER ELEMENTO DE ESTILOS EN EL HEAD.
+
+*/
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove list styling */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove table spacing */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Set default font family and size */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Ensure links are styled consistently */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove default form styling */
+  input, button, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background: none;
+  }
+  
+  /* Set default line height */
+  body {
+    line-height: 1.5;
+  }
+  

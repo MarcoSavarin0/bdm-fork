@@ -1,0 +1,11 @@
+/* mobile first,
+El codigo que no esta en el media se aplica a todos los dipositivos, 
+pero empezamos a diseñar primero para dispositivos mas pequeños 
+como los celulares y vamos incrementando el tamaño hasta que llegue a
+los dispositivos mas grandes como las computadoras de escritorio
+*/
+
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1200px) {}
+@media (min-width: 1400px) {}
