@@ -4,8 +4,101 @@ pero empezamos a diseñar primero para dispositivos mas pequeños
 como los celulares y vamos incrementando el tamaño hasta que llegue a
 los dispositivos mas grandes como las computadoras de escritorio
 */
+body {
+    color: #FFF;
+}
+
+.header__container__text {
+    padding: 3rem 2rem 5.2rem 2rem;
+}
+
+.header__container__text h1 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0.8rem;
+}
+
+.header__container__text p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container__sintomas {
+    background-color: #9794EB;
+}
+
+.wrap__container__ruleta {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 3rem 2rem;
+}
+
+#meningitis_bacteriana,
+#sintomas_menos_frecuentes,
+#sintomas_en_lactas,
+#sintomas_en_nacidos {
+    display: none;
+}
+
+.descripcion__ruleta {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: #7666EA;
+    border-radius: 16px;
+}
+
+.container__descripcion {
+    padding: 1rem;
+}
+
+.container__descripcion h2 {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 1.55rem;
+}
+
+.container__descripcion p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container__descripcion ul {
+    list-style: disc;
+}
+
+.container__descripcion ul li {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ruleta */
+
 
 @media (min-width: 768px) {}
+
 @media (min-width: 1024px) {}
+
 @media (min-width: 1200px) {}
+
 @media (min-width: 1400px) {}

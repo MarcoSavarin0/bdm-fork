@@ -9,8 +9,46 @@ IMPORTANTE
 PONER EN TODOS LOS HTML COMO PRIMER ELEMENTO DE ESTILOS EN EL HEAD.
 ES PARA ELEMENTOS QUE SE UTILIZAN EN TODA LA PAGINA O EN SU MAYORIA
 */
+body {
+    font-family: Inter;
+    font-size: 1rem;
+}
+
+sup {
+    font-size: 0.8rem;
+}
+
+.header__container {
+    background-image: url('../images/banner_background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar__container__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem;
+}
+
+.navbar__container__logo img {
+    width: 14rem;
+    height: 2.3rem;
+}
+
+.hamburguer__button img {
+    width: 2.3rem;
+}
+
+.offcanvas-logo__bdm {
+    width: 14rem;
+    height: 2.3rem;
+}
+
 
 @media (min-width: 768px) {}
+
 @media (min-width: 1024px) {}
+
 @media (min-width: 1200px) {}
+
 @media (min-width: 1400px) {}
