@@ -55,6 +55,7 @@ body {
     padding: 1rem;
     background-color: #7666EA;
     border-radius: 16px;
+    order: 2;
 }
 
 .container__descripcion {
@@ -93,6 +94,139 @@ body {
 }
 
 /* ruleta */
+.container__ruleta {
+    width: 100%;
+    background: #9794EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    order: 1;
+}
+
+.container__items__ruleta {
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.ruleta__item {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    clip-path: polygon(75% -1%, 50% 99%, 0% 0%);
+    transform: translate(-50%);
+    transform-origin: bottom;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #9794EB;
+}
+
+.ruleta__item span {
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#habituales {
+    transform: rotate(261.2deg);
+}
+
+#nacidos {
+    transform: rotate(333.2deg);
+}
+
+#lactantes {
+    transform: rotate(45.2deg);
+}
+
+#menos_frecuentes {
+    transform: rotate(117.2deg);
+}
+
+#bacteriana {
+    transform: rotate(189.2deg);
+}
+
+.ruleta__circulo__medio {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7.4rem;
+    height: 7.4rem;
+    background-color: #7666EA;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.ruleta__circulo__medio span {
+    font-size: 0.3;
+}
+
+#nacidos span {
+    transform: rotate(26deg) translate(-30%, -40%);
+}
+
+#lactantes span {
+    transform: rotate(-45deg) translate(19%, -93%);
+}
+
+#menos_frecuentes span {
+    transform: rotate(243deg) translate(37%, -20%);
+}
+
+#bacteriana span {
+    transform: rotate(170deg) translate(15%, 100%);
+}
+
+#habituales span {
+    transform: rotate(99deg) translate(-25%, 75%);
+}
+
+
+.label__ruleta {
+    padding: 1rem 2rem;
+}
+
+.label__ruleta__content {
+    background-color: #FFF59B;
+    border-radius: 8px;
+    padding: 1.2rem 2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+
+.label__ruleta__content span {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
 @media (min-width: 768px) {}
