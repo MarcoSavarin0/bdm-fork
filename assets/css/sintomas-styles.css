@@ -8,20 +8,6 @@ body {
     color: #FFF;
 }
 
-.header__container__text {
-    padding: 3rem 2rem 5.2rem 2rem;
-}
-
-.header__container__text h1 {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 1.7rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 0.8rem;
-}
-
 .header__container__text p {
     color: #FFF;
     font-family: Inter;
@@ -242,13 +228,9 @@ body {
 @media (min-width: 768px) {}
 
 @media (min-width: 1024px) {
-    .header__container__text {
-        padding: 7rem 6rem 10rem 4.4rem;
-    }
 
-    .header__container__text h1 {
-        font-size: 4rem;
-    }
+
+
 
     .header__container__text p {
         font-size: 1rem;
@@ -282,10 +264,6 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .header__container__text {
-        padding: 4.5rem 11rem 10rem 3.5rem;
-    }
-
     .header__container__text p {
         width: 50rem;
     }
