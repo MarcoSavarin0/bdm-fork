@@ -41,9 +41,49 @@ sup {
 
 .offcanvas-logo__bdm {
     width: 14rem;
-    height: 2.3rem;
+    height: 1.7rem;
 }
 
+.offcanvas {
+    padding: 1.4rem 1rem;
+    height: 30rem !important;
+}
+
+.offcanvas-body {
+    width: 100%;
+}
+
+.offcanvas-body__content {
+    margin: 1rem 0 1rem 0;
+    padding: 0.6rem 0;
+    border-bottom: 0.1rem solid #939393;
+}
+
+.offcanvas-body__content a, .offcanvas-body__content span {
+    color: #939393;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.causas__container {
+    padding: 0.6rem 0;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.causas__container__item {
+    padding: 0.6rem 0.4rem;
+    
+}
+.causas__container__item a{
+    font-size: 0.9rem;
+}
+.causas__container.open {
+    display: block;
+    max-height: 500px; 
+}
 
 @media (min-width: 768px) {}
 
