@@ -87,8 +87,16 @@ sup {
 
 @media (min-width: 768px) {}
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .navbar__container__menu {
+        padding: 1.6rem 4.1rem;
+    }
+}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .navbar__container__menu {
+        padding: 3.4rem 4.1rem;
+    }
+}
 
 @media (min-width: 1400px) {}
