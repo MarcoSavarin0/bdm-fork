@@ -4,7 +4,6 @@ pero empezamos a diseñar primero para dispositivos mas pequeños
 como los celulares y vamos incrementando el tamaño hasta que llegue a
 los dispositivos mas grandes como las computadoras de escritorio
 */
-
 .first__section__container_virus {
     display: flex;
     flex-direction: column;
@@ -59,9 +58,11 @@ los dispositivos mas grandes como las computadoras de escritorio
     .first__section__content__image img {
         width: 100%;
     }
+
     .first__section__content__image {
-        width: 63%;
+        width: 64%;
     }
+
     .first__section__content__text {
         width: 59.5%;
         margin: auto;
@@ -73,6 +74,23 @@ los dispositivos mas grandes como las computadoras de escritorio
     }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .first__section__content__image img {
+        height: 100%;
+    }
 
-@media (min-width: 1400px) {}
+    .first__section__content__image {
+        width: 62.5%;
+        height: 535px;
+    }
+
+    .first__section__content__text p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .first__section__content__image {
+        width: 61.5%;
+    }
+}

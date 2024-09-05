@@ -158,4 +158,22 @@ los dispositivos mas grandes como las computadoras de escritorio
     
 }
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    .first__section__content__text {
+        padding: 4rem 7rem;
+    }
+    .first__section__content__text p {
+        font-size: 1.3rem;
+    }
+    .second__section__content__title h2 {
+        font-size: 3rem;
+        text-align: left;
+    }
+    .second__section__content__container__cards {
+        gap: 2rem;
+    }
+    .second__section__card {
+        max-width: 34rem;
+        padding: 0 9rem;
+    }
+}
