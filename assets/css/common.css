@@ -189,16 +189,38 @@ sup {
     align-items: center;
     justify-content: center;
 }
+
 .icon__redes:active {
     background-color: #7cb1c3;
 }
-@media (min-width: 768px) {}
+
+@media (min-width: 768px) {
+    .footer__container__content__redes {
+        max-width: 700px;
+        max-height: 300px;
+        margin: auto;
+    }
+
+    .footer__content__redes__title p {
+        margin: 0;
+    }
+
+    .footer__content__redes__icons {
+        margin-top: 1rem;
+    }
+}
 
 @media (min-width: 1024px) {
     .navbar__container__menu {
         padding: 1.6rem 4.1rem;
     }
-
+    .footer__container__content__redes {
+        width: 98%;
+        max-width: 1200px;
+        max-height: 300px;
+        margin: auto;
+        padding: 11rem 10rem;
+    }
     .header__container__text {
         padding: 7rem 6rem 10rem 4.4rem;
     }
@@ -216,6 +238,14 @@ sup {
     .header__container__text {
         padding: 4.5rem 11rem 10rem 3.5rem;
     }
+    .footer__container__content__redes {
+        width: 90%;
+        max-width: 1400px;
+    }
 }
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    .footer__container__content__redes{
+        max-width: 1920px;
+    }
+}

@@ -5,7 +5,74 @@ como los celulares y vamos incrementando el tamaño hasta que llegue a
 los dispositivos mas grandes como las computadoras de escritorio
 */
 
+.first__section__container_virus {
+    display: flex;
+    flex-direction: column;
+    background-color: #7666EA;
+}
+
+.first__section__content__text {
+    background-color: #7666EA;
+    padding: 4rem 2.3rem;
+}
+
+.first__section__content__text p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.first__section__content__image img {
+    width: 100%;
+    object-fit: cover;
+    height: 407px;
+}
+
+.second__section__container__parasitos {
+    background-color: #9794EB;
+}
+
+.second__section__content__title {
+    padding: 2.3rem 2.2rem 1.7rem 2.2rem;
+}
+
+
 @media (min-width: 768px) {}
-@media (min-width: 1024px) {}
+
+@media (min-width: 1024px) {
+    .first__section__container_virus {
+        flex-direction: row;
+    }
+
+    .second__paragraph__image {
+        display: flex;
+        order: 1;
+    }
+
+    .second__paragraph__content {
+        order: 2;
+    }
+
+    .first__section__content__image img {
+        width: 100%;
+    }
+    .first__section__content__image {
+        width: 63%;
+    }
+    .first__section__content__text {
+        width: 59.5%;
+        margin: auto;
+        padding: 4rem 5rem;
+    }
+
+    .first__section__content__text p {
+        font-size: 1rem;
+    }
+}
+
 @media (min-width: 1200px) {}
+
 @media (min-width: 1400px) {}
