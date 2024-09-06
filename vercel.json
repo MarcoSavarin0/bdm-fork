@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      { "source": "/causa", "destination": "/causa.html" },
+      { "source": "/meningitis-bacteriana", "destination": "/meningitis-bacteriana.html" },
+      { "source": "/meningitis-por-hongos", "destination": "/meningitis-por-hongos.html" },
+      { "source": "/meningitis-por-parasitos", "destination": "/meningitis-por-parasitos.html" },
+      { "source": "/meningitis-por-virus", "destination": "/meningitis-por-virus.html" },
+      { "source": "/sintomas", "destination": "/sintomas.html" },
+      { "source": "/tipos", "destination": "/tipos.html" },
+      { "source": "/vacunas", "destination": "/vacunas.html" }
+    ]
+  }
+  

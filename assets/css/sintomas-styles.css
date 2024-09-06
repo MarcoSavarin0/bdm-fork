@@ -1,9 +1,4 @@
-/* mobile first,
-El codigo que no esta en el media se aplica a todos los dipositivos, 
-pero empezamos a diseñar primero para dispositivos mas pequeños 
-como los celulares y vamos incrementando el tamaño hasta que llegue a
-los dispositivos mas grandes como las computadoras de escritorio
-*/
+
 body {
     color: #FFF;
 }
@@ -21,90 +16,78 @@ body {
     display: none;
 }
 
-.container__sintomas {
-    background-color: #9794EB;
+@media (min-width: 1024px) {
+    .header__container__text p {
+        font-size: 1rem;
+    }
+
 }
 
-.wrap__container__ruleta {
+@media (min-width: 1200px) {
+    .header__container__text p {
+        width: 50rem;
+    }
+
+    .container__ruleta {
+        width: 50%;
+    }
+
+    .descripcion__ruleta {
+        order: 0;
+        width: 50%;
+    }
+
+    .header__container__text br {
+        display: block;
+    }
+}
+.contenedor-ruleta {
     display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    padding: 3rem 2rem;
+    align-items: center;
+    justify-content: center;
+    background: #9794EB;
+    padding: 65px 50px;
+    gap: 30px;
 }
 
-#meningitis_bacteriana,
-#sintomas_menos_frecuentes,
-#sintomas_en_lactas,
-#sintomas_en_nacidos {
-    display: none;
+.contenedor-ruleta-izquierda {
+    width: 49%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #7666EA;
+    padding: 30px;
+    color: white;
+    font-family: "Inter", sans-serif;
 }
 
-.descripcion__ruleta {
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background-color: #7666EA;
-    border-radius: 16px;
-    order: 2;
-}
 
-.container__descripcion {
-    padding: 1rem;
-}
-
-.container__descripcion h2 {
-    color: #FFF;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    font-size: 1.55rem;
-}
-
-.container__descripcion p {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.container__descripcion ul {
-    list-style: disc;
-}
-
-.container__descripcion ul li {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* ruleta */
-.container__ruleta {
-    width: 100%;
+.contenedor-ruleta-derecha {
+    margin: 0;
+    padding: 0;
+    width: 49%;
     background: #9794EB;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    order: 1;
 }
 
-.container__items__ruleta {
-    width: 20rem;
-    height: 20rem;
+.container-ruleta {
+
+    width: 80vw;
+    height: 80vw;
+    max-width: 525px;
+    max-height: 525px;
     background-color: white;
     border-radius: 50%;
     border: 5px solid white;
     position: relative;
     overflow: hidden;
+    
 }
 
-.ruleta__item {
+.container-ruleta div {
     height: 50%;
     width: 100%;
     position: absolute;
@@ -118,56 +101,139 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: white;
+}
+
+.habituales {
+    padding: 50px;
+    border-radius: 30px;
+    background: #7666EA;
+    color: white;
+    height: 342px;
+}
+
+.bloque {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bloque.activo {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+.subcontenedor {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.subcontenedor {
+    padding-bottom: 50px;
+}
+
+.one p {
+    transform: rotate(28deg) translate(-40px, -13px);
+}
+
+.two p {
+    transform: rotate(-45deg) translate(15px, -35px);
+}
+
+.three p {
+    transform: rotate(245deg) translate(55px, -14px);
+}
+
+.four p {
+    transform: rotate(172deg) translate(20px, 46px);
+}
+
+.five p {
+    transform: rotate(100deg) translate(-40px, 40px);
+}
+
+@media (min-width: 1270px) and (max-width: 1280px) and (min-height: 750px) and (max-height: 800px) {
+    .container-ruleta .one {
+        transform: rotate(2deg);
+
+    }
+}
+
+.container-ruleta .one {
     background-color: #9794EB;
-    transition: all 0.6s ease-in-out;
+    transform: rotate(333.2deg);
 }
 
-.ruleta__item:hover {
-    background-color: #fff;
-    color: #9794EB;
+
+.container-ruleta .two {
+    background-color: #9794EB;
+    transform: rotate(45.2deg);
 }
 
-.ruleta__item span {
-    font-size: 0.75rem;
+
+
+.container-ruleta .three {
+    background-color: #9794EB;
+    transform: rotate(117.2deg);
+}
+
+
+
+.container-ruleta .four {
+    background-color: #9794EB;
+    transform: rotate(189.2deg);
+}
+
+
+.container-ruleta .five {
+    background-color: #9794EB;
+    transform: rotate(261.2deg);
+}
+
+.container-ruleta div:hover {
+    background-color: white;
+    color: #9491EB;
+    cursor: pointer;
+}
+
+.container-ruleta .active {
+    background-color: white;
+    color: #9491EB;
+}
+
+.container-ruleta p {
+
+    width: 100px;
     text-align: center;
-    font-family: Inter;
+    font-family: "Inter";
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-#habituales {
-    transform: rotate(261.2deg);
-}
-
-#nacidos {
-    transform: rotate(333.2deg);
-}
-
-#lactantes {
-    transform: rotate(45.2deg);
-}
-
-#menos_frecuentes {
-    transform: rotate(117.2deg);
-}
-
-#bacteriana {
-    transform: rotate(189.2deg);
-}
-
-.ruleta__circulo__medio {
+#spin {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 7.4rem;
-    height: 7.4rem;
+    width: 20vw;
+    height: 20vw;
+    max-width: 202.129px;
+    max-height: 202.129px;
     background-color: #7666EA;
     border: 6px solid #fff;
     border-radius: 50%;
     color: white;
+    color: #FFF;
     text-align: center;
     font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
     font-weight: 700;
     line-height: normal;
     position: absolute;
@@ -177,148 +243,128 @@ body {
     z-index: 10;
 }
 
-.ruleta__circulo__medio span {
-    font-size: 0.8rem;
+.contenedor-alerta {
+    background-color: #9794EB;
+    padding: 80px 100px;
+
 }
-
-#nacidos span {
-    transform: rotate(26deg) translate(-30%, -40%);
-}
-
-#lactantes span {
-    transform: rotate(-45deg) translate(19%, -93%);
-}
-
-#menos_frecuentes span {
-    transform: rotate(243deg) translate(37%, -20%);
-}
-
-#bacteriana span {
-    transform: rotate(170deg) translate(15%, 100%);
-}
-
-#habituales span {
-    transform: rotate(99deg) translate(-25%, 75%);
-}
-
-
-.label__ruleta {
-    padding: 1rem 2rem 4rem 2rem;
-}
-
-.label__ruleta__content {
-    background-color: #FFF59B;
-    border-radius: 8px;
-    padding: 1.2rem 2rem;
-    display: flex;
-    gap: 0.4rem;
-}
-
-
-.label__ruleta__content span {
-    color: #000;
-    font-family: 'Inter';
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-@media (min-width: 768px) {}
-
-@media (min-width: 1024px) {
-
-
-
-
-    .header__container__text p {
-        font-size: 1rem;
-    }
-    .container__ruleta  {
-        width: 40%;
-    }
-    .descripcion__ruleta {
-        order: 0;
-        width: 60%;
-        max-width: 50%;
-    }
-
-    .wrap__container__ruleta {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 3rem 3.5rem;
-    }
-
-    .label__ruleta__content {
-        padding: 0.5rem 0;
+@media (max-width:1283px) {
+    
+    .contenedor-ruleta {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        padding: 40px 0;
+    }
+
+    .contenedor-alerta {
+        display: flex;
+        justify-content: center;
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        height: 10vh;
+        padding: 50px 32px;
+
+    }
+
+    .custom-button.amarillo {
+        height: auto;
+        width: 300px;
+        padding: 20px;
+        display: flex;
         justify-content: center;
     }
 
-    .label__ruleta__content span {
-        font-size: 1rem;
+    .custom-button.amarillo svg {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        display: flex;
+        margin-bottom: 10%;
+        margin-right: 3%;
     }
+
+    .custom-button.amarillo p {
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 286px;
+    }
+
+    #spin {
+        font-size: 12px;
+    }
+
+    .contenedor-ruleta-derecha {
+        width: 100%;
+
+    }
+
+    .contenedor-ruleta-izquierda {
+        height: 100%;
+        max-height: 500px;
+        width: 70%;
+    }
+
+    .one p {
+        transform: rotate(26deg) translate(-40%, -40%);
+    }
+
+    .two p {
+        transform: rotate(-47deg) translate(27%, -97%);
+    }
+
+    .three p {
+        transform: rotate(243deg) translate(50%, -20%);
+    }
+
+    .four p {
+        transform: rotate(170deg) translate(20%, 100%);
+    }
+
+    .five p {
+        transform: rotate(99deg) translate(-37%, 100%);
+    }
+
 }
 
-@media (min-width: 1200px) {
-    .header__container__text p {
-        width: 50rem;
-    }
-    .container__ruleta {
-        width: 50%;
-    }
-    .descripcion__ruleta {
-        order: 0;
-       width: 50%;
+@media (max-width: 500px) {
+    #spin {
+        height: 133px;
+        width: 133px;
+        font-size: 14px;
     }
 
-    .header__container__text br {
-        display: block;
+    .container-ruleta div p {
+        font-size: 0.6rem;
     }
 
-    .container__items__ruleta {
-        width: 23rem;
-        height: 23rem;
+    .one p {
+        transform: rotate(26deg) translate(-30%, -40%)
     }
 
-    .ruleta__item span {
-        font-size: 0.9rem;
+    .two p {
+        transform:rotate(-45deg) translate(12%, -232%);
     }
 
-    #nacidos {
-        transform: rotate(333.2deg);
+    .three p {
+        transform: rotate(243deg) translate(33%, -20%)
     }
 
-    #lactantes {
-        transform: rotate(45.2deg);
+    .four p {
+        transform:rotate(170deg) translate(15%, 124%)
     }
 
-    #menos_frecuentes {
-        transform: rotate(117.2deg);
-    }
-
-    #bacteriana {
-        transform: rotate(189.2deg);
-    }
-
-    #habituales {
-        transform: rotate(261.2deg);
-
+    .five p {
+        transform: rotate(99deg) translate(-25%, 75%)
     }
 }
-    @media (min-width: 1400px) {
-     
-        .descripcion__ruleta {
-            order: 0;
-            width: 60%;
-            max-width: 50%;
-        }
-
-        .container__items__ruleta {
-            width: 30rem;
-            height: 30rem;
-        }
-    }
