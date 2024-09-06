@@ -161,6 +161,9 @@ los dispositivos mas grandes como las computadoras de escritorio
     .header__container__text p {
         width: 50rem;
     }
+    .second__section__card p {
+        font-size: 1.3rem;
+    }
 
 }
 
@@ -177,6 +180,9 @@ los dispositivos mas grandes como las computadoras de escritorio
     .second__section__content__title h2 {
         font-size: 3rem;
         text-align: left;
+    }
+    .second__section__content__title {
+        padding: 2.3rem 2.2rem 1.7rem 4.2rem;
     }
     .second__section__content__cards {
         margin: 0;

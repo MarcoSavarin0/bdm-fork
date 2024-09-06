@@ -232,7 +232,7 @@ sup {
 
 @media (min-width: 1200px) {
     .navbar__container__menu {
-        padding: 3.4rem 4.1rem;
+        padding: 3.4rem 4rem;
     }
 
     .header__container__text {
@@ -250,6 +250,9 @@ sup {
     }
     .footer__container__content__redes{
         max-width: 1920px;
+    }
+    .navbar__container__menu {
+        padding: 3.4rem 6rem;
     }
     
 }
