@@ -4,8 +4,443 @@ pero empezamos a diseñar primero para dispositivos mas pequeños
 como los celulares y vamos incrementando el tamaño hasta que llegue a
 los dispositivos mas grandes como las computadoras de escritorio
 */
+.header__container__text p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__container__text__download {
+    width: 100%;
+    margin-top: 1.32rem;
+}
+
+.button__download {
+    border-radius: 40px;
+    background-color: #7666EA;
+    width: 100%;
+    padding: 0.7rem;
+    margin: auto;
+    text-align: center;
+}
+
+.button__download span {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.22rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.first__section__first__content__title {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+}
+
+.first__section__first__content__title h2 {
+    color: #2F2F2F;
+    font-family: Inter;
+    font-size: 1.77rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.first__section__first__content__title p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 0.4rem;
+}
+
+.container__vacunas {
+    background: #F2F8F8;
+}
+
+.first__section__title__buttons h3 {
+    color: #2F2F2F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.first__section__buttons {
+    display: flex;
+    padding: 1%;
+    overflow-x: scroll;
+}
+
+.buttons__calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 1em 0 0;
+    display: flex;
+    transition: all .5s ease;
+    cursor: pointer;
+    width: 190px;
+    height: 150px;
+    border-radius: 20px;
+    border: 3px solid #BFBFBF;
+    color: #BFBFBF;
+    z-index: 100;
+    flex: 0 0 auto;
+    min-width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.buttons__calendar p {
+    color: #BFBFBF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.año_de_vida__button p {
+    margin-bottom: 0;
+}
+
+#recien__nacidos.active {
+    border-radius: 20px;
+    background: #FFDC5D;
+    border: 0px;
+}
+
+#anio_de_vida__button.active {
+    border-radius: 20px;
+    background: #81C343;
+    border: 0px;
+}
+
+#h_los_2_anios.active {
+    border-radius: 20px;
+    background: #F47A32;
+    border: 0px;
+}
+
+#b_5_anios.active {
+    border-radius: 20px;
+    background: #DF5972;
+    border: 0px;
+}
+
+#b_11_anios.active {
+    border-radius: 20px;
+    background: #AC76B3;
+    border: 0px;
+}
+
+#jovenes_adultos.active {
+    border-radius: 20px;
+    background: #64C7C4;
+    border: 0px;
+}
+
+#embarazadas.active {
+    border-radius: 20px;
+    background: #F6AAC8;
+    border: 0px;
+}
+
+#recien__nacidos.active p,
+#anio_de_vida__button.active p,
+#h_los_2_anios.active p,
+#b_5_anios.active p,
+#b_11_anios.active p,
+#jovenes_adultos.active p,
+#embarazadas.active p {
+    color: #262261;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#recien__nacidos.active path,
+#anio_de_vida__button.active path,
+#h_los_2_anios.active path,
+#b_5_anios.active path,
+#b_11_anios.active path,
+#jovenes_adultos.active path,
+#embarazadas.active path {
+    fill: #262261;
+}
+
+.calendar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.7rem;
+    gap: 1rem;
+}
+
+.calendar.show {
+    display: flex;
+}
+
+.card__calendar__recienNacidos {
+    width: 93%;
+    max-width: 900px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FFDC5D;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.card__calendar__añoDeVida {
+    width: 93%;
+    max-width: 900px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #81C343;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.card__calendar__hastaLos2Años {
+    width: 93%;
+    max-width: 900px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #F47A32;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.card__calendar__5años {
+    width: 93%;
+    max-width: 900px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #DF5972;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.card__calendar__11años {
+    width: 93%;
+    max-width: 900px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #AC76B3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.card__calendar__Jovenes_adultos {
+    width: 93%;
+    max-width: 900px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #64C7C4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.card__calendar__embarazadas {
+    width: 93%;
+    max-width: 900px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #F6AAC8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.alert__badge {
+    border-radius: 8px;
+    background: rgba(246, 170, 200, 0.50);
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.alert__badge span {
+    color: #262261;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__calendar__recienNacidos h4,
+.card__calendar__añoDeVida h4,
+.card__calendar__hastaLos2Años h4,
+.card__calendar__5años h4,
+.card__calendar__11años h4,
+.card__calendar__Jovenes_adultos h4,
+.card__calendar__embarazadas h4 {
+    color: #262261;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card__calendar__recienNacidos p,
+.card__calendar__añoDeVida p,
+.card__calendar__hastaLos2Años p,
+.card__calendar__5años p,
+.card__calendar__11años p,
+.card__calendar__Jovenes_adultos p,
+.card__calendar__embarazadas p {
+    color: #262261;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.wrap__first__container__Jovenes_adultos,
+.wrap__second__container__Jovenes_adultos,
+.wrap__third__container__Jovenes_adultos,
+.wrap__fourth__container__Jovenes_adultos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.title__h3__jovenes_adultos {
+    color: #1E1E1E;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
 @media (min-width: 768px) {}
-@media (min-width: 1024px) {}
-@media (min-width: 1200px) {}
+
+@media (min-width: 1024px) {
+    .header__container__text p {
+        font-size: 1rem;
+        width: 79%;
+    }
+
+    .button__download {
+        width: 33%;
+        margin: 0;
+        max-width: 300px;
+    }
+
+    .first__section__buttons {
+        overflow-x: hidden;
+        justify-content: center;
+        padding: 1rem 5rem;
+    }
+
+    .buttons__calendar {
+        width: 130px;
+        height: 130px;
+    }
+
+    .first__section__calendar__container__recienNacidos.show {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .card__calendar__recienNacidos {
+        width: 45%;
+    }
+
+    .first__section__calendar__container__añoDeVida.show {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem 4rem;
+        width: 93%;
+        margin: 10px auto;
+    }
+
+    .first__section__calendar__container__hastaLos2Años.show {
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-around;
+        gap: 1.2rem;
+        margin: 10px auto;
+    }
+
+    ._3-row {
+        grid-column: span 2;
+    }
+
+    ._2-row {
+        grid-column: span 3;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .header__container__text p {
+        width: 50rem;
+    }
+
+    .button__download {
+        width: 27%;
+    }
+
+}
+
 @media (min-width: 1400px) {}
