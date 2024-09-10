@@ -387,8 +387,9 @@ los dispositivos mas grandes como las computadoras de escritorio
     }
 
     .buttons__calendar {
-        width: 130px;
-        height: 130px;
+        width: 15%;
+        max-width: 180px;
+        max-height: 130px;
     }
 
     .first__section__calendar__container__recienNacidos.show {
@@ -397,29 +398,40 @@ los dispositivos mas grandes como las computadoras de escritorio
         justify-content: center;
         gap: 1rem;
         padding: 1rem 2rem;
+        width: 100%;
     }
 
-    .card__calendar__recienNacidos {
-        width: 45%;
-    }
+
 
     .first__section__calendar__container__añoDeVida.show {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
-        padding: 1rem 4rem;
-        width: 93%;
+        padding: 1rem 1rem;
+        width: 100%;
         margin: 10px auto;
     }
 
     .first__section__calendar__container__hastaLos2Años.show {
         display: grid;
-        width: 90%;
+        width: 96%;
         grid-template-columns: repeat(6, 1fr);
         justify-content: space-around;
         gap: 1.2rem;
         margin: 10px auto;
+    }
+
+    .card__calendar__recienNacidos {
+        width: 50%;
+    }
+
+    .card__calendar__hastaLos2Años {
+        width: 100%;
+    }
+
+    .card__calendar__añoDeVida {
+        width: 100%;
     }
 
     ._3-row {
@@ -430,6 +442,103 @@ los dispositivos mas grandes como las computadoras de escritorio
         grid-column: span 3;
     }
 
+    .first__section__calendar__container__5años.show {
+        display: grid;
+        width: 96%;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-around;
+        gap: 1.2rem;
+        margin: 10px auto;
+    }
+
+    .card__calendar__5años {
+        width: 100%;
+    }
+
+    .first__section__calendar__container__11años.show {
+        display: grid;
+        width: 96%;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-around;
+        gap: 1.2rem;
+        margin: 10px auto;
+    }
+
+    .card__calendar__11años {
+        width: 100%;
+    }
+
+    .first__section__calendar__container__Jovenes_adultos.show {
+        width: 96%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .wrap__first__container__Jovenes_adultos {
+        display: grid;
+        width: 96%;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-around;
+        gap: 1.2rem;
+        margin: 10px auto;
+    }
+
+    .card__calendar__Jovenes_adultos {
+        width: 100%;
+    }
+
+    .wrap__second__container__Jovenes_adultos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .wrap__second__container__Jovenes_adultos .card__calendar__Jovenes_adultos {
+        width: 50%;
+    }
+
+    .title__h3__jovenes_adultos {
+        text-align: left;
+        margin:3rem 0 0 2rem ;
+    }
+    .wrap__third__container__Jovenes_adultos {
+        display: grid;
+        width: 96%;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-around;
+        gap: 1.2rem;
+        margin: 10px auto;
+    }
+    .wrap__fourth__container__Jovenes_adultos {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .wrap__fourth__container__Jovenes_adultos .card__calendar__Jovenes_adultos {
+        width: 96%;
+        max-width: none;
+    }
+    .first__section__calendar__container__embarazadas.show {
+        display: grid;
+        width: 95%;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-around;
+        gap: 1.2rem;
+        margin: 10px auto;
+    }
+    .alert__badge {
+        grid-column: 1 / -1; 
+        margin-bottom: 1rem;
+        margin: 0 auto;
+        padding: 1rem;
+        border-radius: 4px;
+        width: 100%;
+    }
+    .card__calendar__embarazadas {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -441,6 +550,16 @@ los dispositivos mas grandes como las computadoras de escritorio
         width: 27%;
     }
 
+    .first__section__second__content__buttons {
+        width: 90%;
+        margin: 0 auto;
+    }
+
 }
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    .first__section__second__content__buttons {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
